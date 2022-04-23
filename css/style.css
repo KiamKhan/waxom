@@ -1,0 +1,1061 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li{
+    padding: 0;
+    margin: 0;
+}
+
+.common_button{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    padding: 12px 27px 11px 26px;
+    background: #998675;
+    text-transform: uppercase;
+    box-shadow: 0 3px 0 0 #736357;
+}
+
+.common_button:hover{
+    color: #fff;
+}
+
+.common_head h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #555555;
+    margin-bottom: 17px;
+}
+
+.common_head p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8c8c8c;
+    line-height: 24px;
+}
+
+.footer_common_head h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    line-height: 55px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.btt{
+    font-size: 40px;
+    color: #c7b299;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+}
+/* ====================================================
+                common css part end
+==================================================== */
+
+
+/* ==================================================
+                menu part css start
+================================================== */
+#main_menu{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#main_menu ul li a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 55px;
+    margin-left: 31px !important;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+#main_menu ul li a:hover{
+    color: #c7b299;
+}
+
+.menu_fix{
+    position: sticky !important;
+    left: 0;
+    top: 0 !important;
+    width: 100%;
+    background: #c7b299;
+    z-index: 9999;
+}
+
+.menu_fix ul li a:hover{
+    color: #fff !important;
+}
+
+/* ==================================================
+                menu part css end
+================================================== */
+
+/* ==================================================
+                banner part css start
+================================================== */
+#banner{
+    padding: 372px 0 384px;
+    background: url(../images/banner.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+.banner_text h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+
+.banner_text h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 52px;
+    color: #fff;
+    margin-bottom: 11px;
+}
+
+.banner_text p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 49px;
+}
+/* ==================================================
+                banner part css end
+================================================== */
+
+/* ==================================================
+                service part css start
+================================================== */
+#service{
+    padding: 88px 0 109px;
+}
+
+.serv_col i{
+    cursor: pointer;
+    font-size: 48px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    margin-bottom: 25px;
+}
+
+.serv_col h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #555555;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+}
+
+.serv_col p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #8c8c8c;
+    line-height: 24px;
+    position: relative;
+}
+.serv_col p::after{
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: -30px;
+    width: 70px;
+    height: 4px;
+    background: #f1eee9;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.serv_col:hover i{
+    color: #c7b299;
+}
+
+.serv_col:hover p::after{
+    background: #c7b299;
+}
+/* ==================================================
+                service part css end
+================================================== */
+
+/* ==================================================
+                slider part css start
+================================================== */
+.slider_cont .draggable{
+    padding: 124px 0 !important;
+}
+
+.slider_item{
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.slider_cont .slick-current .slider_item{
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
+/* ==================================================
+                slider part css end
+================================================== */
+
+/* ==================================================
+                purchase part css start
+================================================== */
+#purchase{
+    padding: 41px 0 46px;
+    background: linear-gradient(to right, #211b19, #4e3427);
+}
+
+.purchase_text h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+
+.purchase_text h3 span{
+    color: #c7b299;
+}
+
+.purchase_text p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: 18px;
+    color: #615855;
+}
+/* ==================================================
+                purchase part css end
+================================================== */
+
+/* ==================================================
+                project part css start
+================================================== */
+#project{
+    padding: 74px 0 82px;
+}
+
+.filter_btn{
+    margin-top: 40px;
+}
+
+.filter_btn ul{
+    display: flex;
+}
+
+.filter_btn ul li{
+    padding: 9px 17px 7px;
+    border: 1px solid #ebebeb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #8c8c8c;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin: 0 4.5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.filter_btn ul li:hover{
+    background: #998675;
+    color: #fff;
+    border: 1px solid #998675;
+}
+
+.project_inner{
+    margin: 40px 0 40px;
+}
+
+.project_col:first-child{
+    margin-bottom: 24px;
+}
+
+.project_img{
+    position: relative;
+}
+
+.project_img > .overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.project_img > .overly ul{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.project_img > .overly ul li a{
+    font-size: 25px;
+    color: #fff;
+    margin: 0 15px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.project_info{
+    position: relative;
+    padding: 30px 0 27px 30px;
+    background: #fbfaf8;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.project_info::after{
+    position: absolute;
+    content: '';
+    top: -30px;
+    left: 20px;
+    border-top: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #fbfaf8;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.project_info h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #c7b299;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.project_info p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #d1d1d1;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.project_col:hover .project_img > .overly{
+    visibility: visible;
+    opacity: 1;
+}
+
+.project_col:hover .project_info{
+    background: #362f2d;
+}
+
+.project_col:hover .project_info::after{
+    border-bottom: 15px solid #362f2d;
+}
+
+.project_col:hover .project_info h4{
+    color: #fff;
+}
+
+.project_col:hover .project_info p{
+    color: #c7b299;
+}
+
+.project_img > .overly ul li a:hover{
+    color: #c7b299;
+}
+/* ==================================================
+                project part css end
+================================================== */
+
+/* ==================================================
+                video part css start
+================================================== */
+#video{
+    padding: 211px 0 252px;
+    background: url(../images/video_bg.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+#video::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(17, 17, 17, 0.5);
+    z-index: -1;
+}
+
+.video_info a{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 35px;
+    color: #fff;
+    z-index: 1;
+    margin-bottom: 36px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.video_info a::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    border: 2px solid #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.video_info h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 14px;
+}
+
+.video_info p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+/* ==================================================
+                video part css end
+================================================== */
+
+/* ==================================================
+                mobile_device part css start
+================================================== */
+#mobile_device{
+    padding-top: 79px;
+}
+
+.mobile_text{
+    margin-top: 111px;
+}
+
+.mobile_text h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+.mobile_text p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #8c8c8c;
+}
+
+.text_box{
+    margin: 27px 0 0 57px;
+}
+
+.text_box p{
+    position: relative;
+    padding-left: 50px;
+}
+
+.text_box p i{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    font-size: 21px;
+    color: #c7b299;
+}
+
+/* ==================================================
+                mobile_device part css end
+================================================== */
+
+/* ==================================================
+                counter part css start
+================================================== */
+#counter{
+    padding: 68px 0 82px;
+    background: linear-gradient(to right, #211b19, #4e3427);
+}
+.counter_col i{
+    font-size: 44px;
+    color: #bfab93;
+    margin-bottom: 19px;
+}
+
+.counter_col span{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.counter_col p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #bfab93;
+    position: relative;
+    text-transform: uppercase;
+}
+.counter_col p::after{
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.counter_col:hover p::after{
+    background: #bfab93;
+}
+/* ==================================================
+                counter part css end
+================================================== */
+
+/* ==================================================
+                post part css start
+================================================== */
+#posts{
+    padding: 74px 0 141px;
+}
+
+.post_item{
+    margin-top: 35px;
+}
+
+.post_item .slick-slide{
+    padding: 0 12px;
+}
+
+.post_img{
+    position: relative;
+}
+
+.post_img .overly{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 17, 17, 0.7);
+    z-index: 1;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.post_img .post_date{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 60px;
+    z-index: 2;
+}
+
+.post_img .post_date .date{
+    height: 35px;
+    background: #363636;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    line-height: 35px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+
+.post_img .post_date .month{
+    height: 25px;
+    background: #252525;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+    text-transform: capitalize;
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.post_info{
+    padding: 30px 0 27px 30px;
+    background: #fbfaf8;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.post_info h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #555555;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.post_info p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #8c8c8c;
+    line-height: 22px;
+    margin-bottom: 18px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.post_info a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #c7b299;
+    text-transform: capitalize;
+}
+.post_info a span{
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.post_col:hover .post_img .overly{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.post_col:hover .post_img .post_date .date{
+    background: #c7b299;
+}
+
+.post_col:hover .post_img .post_date .month{
+    background: #a48d72;
+}
+
+.post_col:hover .post_info{
+    background: #362f2d;
+}
+
+.post_col:hover .post_info h4{
+    color: #c7b299;
+}
+
+.post_col:hover .post_info p{
+    color: #fff;
+}
+
+.prv_arr, .next_arr {
+    position: absolute;
+    bottom: -53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    font-size: 15px;
+    color: #d1d1d1;
+    border: 1px solid #d1d1d1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.prv_arr:hover,.next_arr:hover{
+    color: #c7b299;
+    border: 1px solid #c7b299;
+}
+
+.prv_arr{
+    left: 47%;
+    transform: translateX(-47%);
+    -webkit-transform: translateX(-47%);
+    -moz-transform: translateX(-47%);
+    -ms-transform: translateX(-47%);
+    -o-transform: translateX(-47%);
+}
+.next_arr{
+    right: 47%;
+    transform: translateX(-47%);
+    -webkit-transform: translateX(-47%);
+    -moz-transform: translateX(-47%);
+    -ms-transform: translateX(-47%);
+    -o-transform: translateX(-47%);
+}
+/* ==================================================
+                post part css end
+================================================== */
+
+/* ==================================================
+                partner part css start
+================================================== */
+#partner{
+    position: relative;
+    padding: 140px 0 138px;
+    background: url(../images/partner_bg.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+#partner::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 17, 17, 0.7);
+    z-index: -1;
+}
+/* ==================================================
+                partner part css end
+================================================== */
+
+/* ==================================================
+                footer part css start
+================================================== */
+/* ================================
+        footer top start
+================================ */
+.footer_top{
+    padding: 80px 0 80px;
+    background: #191919;
+}
+
+.footer_1_text{
+    margin-top: 25px;
+}
+
+.footer_1_text p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #555555;
+    line-height: 24px;
+    margin-bottom: 18px;
+}
+
+.footer_1_text a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14;
+    color: #d1d1d1;
+    text-transform: capitalize;
+}
+
+.footer_1_text a span{
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+/* recent post css */
+.recent_posts{
+    padding-bottom: 16px;
+    border-bottom: 1px solid #252525;
+    margin-bottom: 17px;
+}
+.recent_posts:last-child{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.recent_post_date{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #363636;
+    margin-bottom: 2px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.recent_post_info{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #555555;
+    line-height: 20px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.recent_posts:hover .recent_post_date{
+    color: #fff;
+}
+.recent_posts:hover .recent_post_info{
+    color: #c7b299;
+}
+
+/* twitter post css */
+.twitter_post{
+    padding-bottom: 16px;
+    border-bottom: 1px solid #252525;
+    margin-bottom: 17px;
+}
+.twitter_post:last-child{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.twitt{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #555555;
+    line-height: 20px;
+    margin-bottom: 3px;
+}
+
+.twitt .brand{
+    color: #00bff3;
+}
+
+.twitt .link{
+    color: #959595;
+}
+
+.twitt_time{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #363636;
+}
+
+/* dribbble css */
+.dribbble_photo ul li{
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.dribbble_photo ul li:nth-child(odd){
+    margin-right: 10px;
+}
+.dribbble_photo ul li:nth-child(-n + 2){
+    margin-bottom: 10px;
+}
+
+.dribbble_photo ul li:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/* ================================
+        footer top ends
+================================ */
+.footer_bottom{
+    padding: 42px 0 55px;
+    background: #111111;
+}
+
+.copyRight p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #555555;
+    text-transform: capitalize;
+}
+
+.copyRight p span{
+    color: #959595;
+}
+
+.copyRight p .faq{
+    color: #c7b299;
+    text-transform: uppercase;
+}
+
+.disgner p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #555555;
+}
+
+.disgner p span{
+    color: #959595;
+}
+/* ==================================================
+                footer part css end
+================================================== */
