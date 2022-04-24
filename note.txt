@@ -3,3 +3,14 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif;
 
 c7b299
+
+responsive:
+h1 - 36px
+
+h2 - 22px
+
+h3 - 20px
+
+p - 14px
+
+h3 head - 25px

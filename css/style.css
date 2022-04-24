@@ -103,19 +103,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li{
     color: #c7b299;
 }
 
-.menu_fix{
-    position: sticky !important;
-    left: 0;
-    top: 0 !important;
-    width: 100%;
-    background: #c7b299;
-    z-index: 9999;
-}
-
-.menu_fix ul li a:hover{
-    color: #fff !important;
-}
-
 /* ==================================================
                 menu part css end
 ================================================== */
@@ -125,8 +112,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li{
 ================================================== */
 #banner{
     padding: 372px 0 384px;
-    background: url(../images/banner.jpg) no-repeat center/cover;
-    background-attachment: fixed;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
 }
 
 .banner_text h2{
@@ -162,7 +151,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li{
                 service part css start
 ================================================== */
 #service{
-    padding: 88px 0 109px;
+    padding: 88px 0 51px;
+}
+
+.serv_slider .draggable{
+    padding-bottom: 30px;
 }
 
 .serv_col i{
@@ -227,6 +220,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li{
 /* ==================================================
                 slider part css start
 ================================================== */
+#slider{
+    padding-top: 84px;
+    background: #fbfaf8;
+}
 .slider_cont .draggable{
     padding: 124px 0 !important;
 }
@@ -274,7 +271,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li{
 .purchase_text p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-style: 18px;
+    font-size: 18px;
     color: #615855;
 }
 /* ==================================================
@@ -462,8 +459,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li{
 ================================================== */
 #video{
     padding: 211px 0 252px;
-    background: url(../images/video_bg.jpg) no-repeat center/cover;
-    background-attachment: fixed;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
     position: relative;
     z-index: 1;
 }
@@ -517,7 +516,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li{
     -o-transform: translate(-50%, -50%);
 }
 
-.video_info h4{
+.video_info h3{
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 30px;
@@ -548,7 +547,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li{
     margin-top: 111px;
 }
 
-.mobile_text h4{
+.mobile_text h3{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 30px;
@@ -860,7 +859,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li{
 #partner{
     position: relative;
     padding: 140px 0 138px;
-    background: url(../images/partner_bg.jpg) no-repeat center/cover;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
     background-attachment: fixed;
     z-index: 1;
 }
@@ -874,6 +875,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li{
     bottom: 0;
     background: rgba(17, 17, 17, 0.7);
     z-index: -1;
+}
+
+.partner_col{
+    display: flex;
+    justify-content: center;
 }
 /* ==================================================
                 partner part css end
@@ -906,7 +912,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li{
 .footer_1_text a{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 14;
+    font-size: 14px;
     color: #d1d1d1;
     text-transform: capitalize;
 }
@@ -1000,6 +1006,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li{
 
 /* dribbble css */
 .dribbble_photo ul li{
+    width: 48.4%;
+    margin: 0 10px 10px 0;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -1007,11 +1015,13 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li{
     -o-transition: all linear .3s;
 }
 
-.dribbble_photo ul li:nth-child(odd){
-    margin-right: 10px;
+.dribbble_photo ul li:nth-child(even){
+    margin-right: 0;
 }
-.dribbble_photo ul li:nth-child(-n + 2){
-    margin-bottom: 10px;
+
+.dribbble_photo ul li:nth-child(3),
+.dribbble_photo ul li:nth-child(4){
+    margin-bottom: 0;
 }
 
 .dribbble_photo ul li:hover{
